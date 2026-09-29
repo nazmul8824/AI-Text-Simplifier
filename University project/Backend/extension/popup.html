@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Text Simplifier</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>AI Text Simplifier</h2>
+
+    <label for="mode">Simplification level:</label>
+    <select id="mode">
+      <option value="fifth_grader">Explain like to a 5th grader</option>
+      <option value="basic">Simplify to basic level</option>
+      <option value="no_jargon">Keep meaning, remove jargon</option>
+    </select>
+
+    <button id="simplifySelection">Simplify Selected Text</button>
+    <button id="simplifyPage">Simplify Full Page</button>
+    <button id="restorePage">Restore Original</button>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
